@@ -10,11 +10,11 @@
 	<%! 
 	String str = "Hello, Java Server Pages";
 	
-	public String getString() {
-		return str;
+	public String getString(String data) {
+		return data;
 	}
 	%>
 	
-	결과: <%=getString()%>
+	결과: <%=getString(str)%>
 </body>
 </html>
