@@ -1,5 +1,7 @@
 package ch03;
 
+import java.util.regex.Pattern;
+
 public class Member {
 	// 이메일 정규식
 	public static final String pattern1 = "\\w+@\\w+\\.\\w+(\\.\\w+)?";
@@ -27,10 +29,12 @@ public class Member {
 	}
 
 	public String result() {
-		String result = "유효성 검사에 통과하지 못했습니다.";
-		if (email.matches(pattern1) && tel.matches(pattern2)) {
-			result = "환영합니다!";
-		}
-		return result;
+		boolean checkEmail = Pattern.matches(pattern1, email);
+		boolean checkPhone = Pattern.matches(pattern2, tel);
+
+		if (checkEmail && checkPhone)
+			return "환영합니다!";
+		else
+			return "유효성 검사에 통과하지 못했습니다.";
 	}
 }

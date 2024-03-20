@@ -11,8 +11,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h4>결과</h4>
+	<h2>결과</h2>
 	<hr>
-	${member.result()}
+	<%=member.result()%>
 </body>
 </html>
