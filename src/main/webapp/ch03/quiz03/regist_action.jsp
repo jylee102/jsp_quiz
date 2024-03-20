@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<jsp:useBean id="member" class="ch07.Member" />
+<jsp:useBean id="member" class="ch03.Member" />
 <jsp:setProperty name="member" property="*" />
 
 <!DOCTYPE html>

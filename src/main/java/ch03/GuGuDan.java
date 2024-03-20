@@ -1,4 +1,4 @@
-package ch07;
+package ch03;
 
 public class GuGuDan {
 	public String process(int num) {

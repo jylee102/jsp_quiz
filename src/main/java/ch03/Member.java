@@ -1,4 +1,4 @@
-package ch07;
+package ch03;
 
 public class Member {
 	// 이메일 정규식
