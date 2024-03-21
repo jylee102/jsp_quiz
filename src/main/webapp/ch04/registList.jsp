@@ -15,6 +15,7 @@
 			<th>아이디</th>			
 			<th>이름</th>
 			<th>전화번호</th>
+			<th>고객등급</th>
 		</tr>
 		
 		<c:forEach var="c" varStatus="i" items="${customers}">
@@ -24,6 +25,7 @@
 					<a href="/jsp_quiz/rcontrol?action=info&id=${c.id}">${c.name}</a>
 				</td>
 				<td>${c.phone}</td>
+				<td>${c.grade}</td>
 			</tr>
 		</c:forEach>
 	</table>
